@@ -165,7 +165,7 @@ def index():
         logger.info(user_input)
 
         try:
-            response = agent.invoke({"input": user_input, "chat_history": [] , "callbacks": [handler_1, handler_2]})
+            response = agent.invoke(user_input,{"callbacks": [handler_1, handler_2]})
         except Exception as e:
             response = 'An unexpected error occured, please try later'
         logger.info(response)
