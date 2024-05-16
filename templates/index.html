@@ -1,0 +1,38 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Center Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .generated-code {
+            max-width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+            white-space: pre-wrap; /* Preserve line breaks and wrap long lines */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Call Center Chatbot</h1>
+        <form method="POST">
+            <label for="prompt">Enter your message:</label><br>
+            <input type="text" id="prompt" name="prompt" required><br><br>
+            <button type="submit">Generate response</button>
+        </form>
+        {% if user_prompt %}
+        <div class="generated-code">
+            <h2>Bot Reply:</h2>
+            <pre>{{ generated_code }}</pre>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
