@@ -101,7 +101,7 @@ def Company_Policies(prompt: str) -> str:
     Search details for any packages/products/services provided"""
 
     # load documents
-    documents = SimpleDirectoryReader("companypolicies").load_data()
+    documents = SimpleDirectoryReader("data/companypolicies").load_data()
     Settings.text_splitter = SentenceSplitter(chunk_size=1024, chunk_overlap=20)
 
     index = VectorStoreIndex.from_documents(
