@@ -1,0 +1,44 @@
+# 1️⃣ Ignore Python cache files and compiled files
+__pycache__/
+*.py[cod]
+*.so
+*.pyo
+
+# 2️⃣ Ignore environment files (for security)
+.env
+*.env
+*.venv
+venv/
+env/
+!env.example  # (If you want to keep an example file)
+
+# 3️⃣ Ignore audio files (WAV, MP3, etc.)
+*.wav
+*.mp3
+*.ogg
+*.aac
+
+# 4️⃣ Ignore CSV and Excel files
+*.csv
+*.xls
+*.xlsx
+*.tsv
+
+# 5️⃣ Ignore log files
+*.log
+logs/
+*.out
+
+# 7️⃣ Ignore editor & OS-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# 8️⃣ Ignore temporary & backup files
+*.bak
+*.tmp
+*.temp
+*.log.*

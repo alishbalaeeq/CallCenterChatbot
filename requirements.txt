@@ -1,8 +1,12 @@
-!pip install --upgrade --quiet langchain langchain-community langchain-experimental
-!pip install llama-index-embeddings-huggingface
-!pip install llama-cpp-python
-!pip install llama-index-experimental
-!pip install llama-index ipywidgets
-!pip install llama-index-llms-langchain
-!pip install loguru 
-!pip install accelerate
+langchain 
+langchain-community 
+langchain-experimental
+llama-index-embeddings-huggingface
+llama-cpp-python
+llama-index-experimental
+llama-index
+llama-index-llms-langchain
+python-dotenv
+flask
+loguru 
+accelerate
